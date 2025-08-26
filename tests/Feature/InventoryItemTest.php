@@ -157,13 +157,10 @@ it('shows inventory on home page for authenticated users', function () {
     );
 });
 
-it('shows welcome page for guests', function () {
+it('redirects guests to login from home page', function () {
     auth()->logout();
 
     $response = $this->get(route('home'));
 
-    $response->assertStatus(200);
-    $response->assertInertia(fn ($page) => 
-        $page->component('welcome')
-    );
+    $response->assertRedirect(route('login'));
 });

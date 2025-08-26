@@ -16,7 +16,7 @@ Route::get('/', function () {
     if (auth()->check()) {
         return app(InventoryItemController::class)->index(request());
     }
-    return Inertia::render('welcome');
+    return redirect()->route('login');
 })->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {

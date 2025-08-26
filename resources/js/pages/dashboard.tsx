@@ -100,7 +100,7 @@ export default function Dashboard() {
                 </div>
 
                 {/* Stats Overview */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                         <div className="flex items-center justify-between">
                             <div>
@@ -117,21 +117,7 @@ export default function Dashboard() {
                         </div>
                     </div>
 
-                    <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-                        <div className="flex items-center justify-between">
-                            <div>
-                                <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                                    Stok Rendah
-                                </p>
-                                <p className="text-3xl font-bold text-orange-600 dark:text-orange-400">
-                                    -
-                                </p>
-                            </div>
-                            <div className="rounded-lg bg-orange-100 p-3 text-orange-600 dark:bg-orange-900/20 dark:text-orange-400">
-                                ⚠️
-                            </div>
-                        </div>
-                    </div>
+
 
                     <div className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800">
                         <div className="flex items-center justify-between">
